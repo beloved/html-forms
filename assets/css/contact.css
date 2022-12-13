@@ -73,6 +73,22 @@ header {
   font-size: 1.25em;
 }
 
+.menu-open,
+.menu-close {
+  display: none;
+  color: var(--primary-color);
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+  top: -50px;
+  left: 85%;
+}
+
+.menu-open:hover,
+.menu-close:hover {
+  color: var(--accent-color);
+}
+
 .nav-items {
   display: flex;
   gap: 20px;
@@ -131,7 +147,7 @@ form {
   justify-content: center;
   background: url(../images/ui-element-006x3.png) no-repeat top center;
   background-size: cover;
-  padding: 6em 8em;
+  padding: 6em 4em;
   max-height: 100%;
   max-width: 100%;
   color: var(--primary-color);
@@ -152,15 +168,15 @@ textarea,
 button {
   background-color: var(--primary-color);
   border: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   margin: 0 0 10px 20px;
-  width: 80%;
+  width: 60%;
 }
 
 label {
   color: var(--primary-color);
   padding-bottom: 10px;
-  margin-left: 4em;
+  margin-left: 9em;
   align-self: flex-start;
 }
 
@@ -177,4 +193,138 @@ footer {
   height: 100px;
   background-color: var(--secondary-color);
   color: var(--gray);
+}
+
+@media (min-width: 1200px) {
+  main {
+    padding: 2em 0;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-top: 6em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contact-img {
+    display: none;
+  }
+
+  main {
+    padding: 2em 0;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .form-img {
+    top: 30px;
+  }
+
+  label {
+    margin-left: 19em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  button {
+    margin-top: 6em;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 0 1em;
+  }
+
+  label {
+    margin-left: 15em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-title {
+    display: none;
+  }
+
+  label {
+    margin-left: 7em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  label {
+    margin-left: 2em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0px 0 30px 15px;
+  }
+
+  .menu-open {
+    display: inline;
+  }
+
+  .menu-close {
+    display: none;
+  }
+
+  label {
+    margin-left: 0.75em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 100%;
+  }
 }

@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/c25dbc33a4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Amy Funderburg - Contact Us</title>
   </head>
   <body>
@@ -22,6 +26,8 @@
           <img class="logo" src="assets/images/logo-dark.png" alt="logo" />
           <p class="logo-title">Amy Funderburg</p>
         </div>
+        <i class="fa-solid fa-bars menu-open"></i>
+        <i class="fa-solid fa-xmark menu-close"></i>
         <nav class="nav-items">
           <a class="nav-item" href="index.html">HOME</a>
           <a class="nav-item" href="about.html">ABOUT</a>
@@ -35,6 +41,7 @@
         </div>
         <div class="form-container">
           <img
+            class="contact-img"
             src="assets/images/interaction-21.png"
             alt="woman interacting with phone"
           />
@@ -45,8 +52,7 @@
             <label for="email">Email *</label>
             <input id="email" type="email" name="email" required />
             <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="10" required>
-            </textarea>
+            <textarea id="message" name="message" rows="6" required> </textarea>
             <label for="priority">Priority </label>
             <select id="priority" name="priority" required>
               <option value="Low" selected>Low</option>
@@ -62,5 +68,6 @@
         <small>&copy;Copyright 2022 by Amy Funderburg</small>
       </footer>
     </div>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>
