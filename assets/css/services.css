@@ -70,6 +70,23 @@ header {
   font-family: "Dancing Script", cursive;
   font-size: 1.25em;
 }
+
+.menu-open,
+.menu-close {
+  display: none;
+  color: var(--primary-color);
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+  top: -50px;
+  left: 85%;
+}
+
+.menu-open:hover,
+.menu-close:hover {
+  color: var(--accent-color);
+}
+
 .nav-items {
   display: flex;
   gap: 20px;
@@ -182,4 +199,63 @@ footer {
   height: 100px;
   background-color: var(--secondary-color);
   color: var(--gray);
+}
+
+@media (max-width: 1300px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 2em;
+  }
+  .logo-title {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    padding: 2em 0;
+  }
+
+  .card {
+    padding: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0px 0 30px 15px;
+  }
+
+  .menu-open {
+    display: inline;
+  }
+
+  .menu-close {
+    display: none;
+  }
+
+  .card {
+    padding: 0;
+  }
 }
