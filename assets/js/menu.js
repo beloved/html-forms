@@ -15,11 +15,6 @@ function openMenu() {
         }
     )
 
-    // navItem.className.add(".show-nav-item");
-    // navItem.className.remove(".nav-item");
-    // if (navItem.style.display == "none") {
-    //     navItem.style.display = "inline";
-    // }
 }
 
 function closeMenu() {

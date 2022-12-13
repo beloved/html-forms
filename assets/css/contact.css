@@ -57,6 +57,7 @@ header {
   padding: 0 4em;
   background-color: var(--secondary-color);
 }
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -242,6 +243,7 @@ footer {
     width: 50%;
     margin-bottom: 10px;
   }
+
   button {
     margin-top: 6em;
   }
