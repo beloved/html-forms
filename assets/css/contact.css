@@ -26,12 +26,6 @@ button {
   cursor: pointer;
 }
 
-ol,
-ul,
-menu {
-  list-style: none;
-}
-
 p {
   line-height: 2;
 }

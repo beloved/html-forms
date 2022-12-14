@@ -57,14 +57,17 @@ header {
   padding: 0 4em;
   background-color: var(--secondary-color);
 }
+
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .logo {
   width: 75px;
 }
+
 .logo-title {
   color: var(--accent-color);
   font-family: "Dancing Script", cursive;
@@ -122,6 +125,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 4em;
 }
+
 .card {
   background: url(../images/ui-element-006.png) no-repeat top;
   background-size: cover;
@@ -168,6 +172,7 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .card-btn {
   padding: 15px 20px;
   color: var(--accent-color);
@@ -207,6 +212,7 @@ footer {
   header {
     padding: 0 2em;
   }
+
   .logo-title {
     display: none;
   }
