@@ -50,6 +50,7 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -100,6 +101,7 @@ a:active {
   color: var(--accent-color);
 }
 
+/* Main */
 main {
   min-height: 100vh;
   display: flex;
@@ -186,6 +188,7 @@ strike {
   opacity: 0.2;
 }
 
+/* Footer */
 footer {
   display: flex;
   align-items: center;
@@ -195,6 +198,7 @@ footer {
   color: var(--gray);
 }
 
+/* Media Queries */
 @media (max-width: 1300px) {
   .card-container {
     grid-template-columns: 1fr 1fr;
