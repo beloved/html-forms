@@ -77,17 +77,6 @@ header {
 .menu-open,
 .menu-close {
   display: none;
-  color: var(--primary-color);
-  font-size: 2em;
-  cursor: pointer;
-  position: relative;
-  top: -50px;
-  left: 85%;
-}
-
-.menu-open:hover,
-.menu-close:hover {
-  color: var(--accent-color);
 }
 
 .nav-items {
@@ -315,7 +304,22 @@ footer {
     display: inline;
   }
 
+  .menu-open,
   .menu-close {
+    color: var(--primary-color);
+    font-size: 2em;
+    cursor: pointer;
+    position: relative;
+    top: -50px;
+    left: 85%;
+  }
+
+  .menu-open:hover,
+  .menu-close:hover {
+    color: var(--accent-color);
+  }
+
+  i.menu-close {
     display: none;
   }
 
